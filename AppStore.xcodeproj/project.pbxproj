@@ -10,9 +10,10 @@
 		C8C683882914F6C1003A11EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C683872914F6C1003A11EC /* AppDelegate.swift */; };
 		C8C6838A2914F6C1003A11EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C683892914F6C1003A11EC /* SceneDelegate.swift */; };
 		C8C6838C2914F6C1003A11EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C6838B2914F6C1003A11EC /* ViewController.swift */; };
-		C8C6838F2914F6C1003A11EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8C6838D2914F6C1003A11EC /* Main.storyboard */; };
 		C8C683912914F6C2003A11EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8C683902914F6C1003A11EC /* Assets.xcassets */; };
 		C8C683942914F6C2003A11EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8C683922914F6C2003A11EC /* LaunchScreen.storyboard */; };
+		C8C6839D2914F6FE003A11EC /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C8C6839C2914F6FE003A11EC /* SnapKit */; };
+		C8C683A02914F712003A11EC /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C8C6839F2914F712003A11EC /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +21,6 @@
 		C8C683872914F6C1003A11EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8C683892914F6C1003A11EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C8C6838B2914F6C1003A11EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C8C6838E2914F6C1003A11EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C8C683902914F6C1003A11EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8C683932914F6C2003A11EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C8C683952914F6C2003A11EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,6 +31,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8C683A02914F712003A11EC /* Kingfisher in Frameworks */,
+				C8C6839D2914F6FE003A11EC /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,13 +60,44 @@
 			children = (
 				C8C683872914F6C1003A11EC /* AppDelegate.swift */,
 				C8C683892914F6C1003A11EC /* SceneDelegate.swift */,
-				C8C6838B2914F6C1003A11EC /* ViewController.swift */,
-				C8C6838D2914F6C1003A11EC /* Main.storyboard */,
-				C8C683902914F6C1003A11EC /* Assets.xcassets */,
-				C8C683922914F6C2003A11EC /* LaunchScreen.storyboard */,
+				C8C683A52914F78C003A11EC /* Models */,
+				C8C683A32914F77F003A11EC /* Views */,
+				C8C683A22914F779003A11EC /* Controllers */,
+				C8C683A12914F770003A11EC /* Supports */,
 				C8C683952914F6C2003A11EC /* Info.plist */,
 			);
 			path = AppStore;
+			sourceTree = "<group>";
+		};
+		C8C683A12914F770003A11EC /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				C8C683902914F6C1003A11EC /* Assets.xcassets */,
+				C8C683922914F6C2003A11EC /* LaunchScreen.storyboard */,
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		C8C683A22914F779003A11EC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C8C6838B2914F6C1003A11EC /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C8C683A32914F77F003A11EC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C8C683A52914F78C003A11EC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +116,10 @@
 			dependencies = (
 			);
 			name = AppStore;
+			packageProductDependencies = (
+				C8C6839C2914F6FE003A11EC /* SnapKit */,
+				C8C6839F2914F712003A11EC /* Kingfisher */,
+			);
 			productName = AppStore;
 			productReference = C8C683842914F6C1003A11EC /* AppStore.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +148,10 @@
 				Base,
 			);
 			mainGroup = C8C6837B2914F6C1003A11EC;
+			packageReferences = (
+				C8C6839B2914F6FE003A11EC /* XCRemoteSwiftPackageReference "SnapKit" */,
+				C8C6839E2914F712003A11EC /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = C8C683852914F6C1003A11EC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +168,6 @@
 			files = (
 				C8C683942914F6C2003A11EC /* LaunchScreen.storyboard in Resources */,
 				C8C683912914F6C2003A11EC /* Assets.xcassets in Resources */,
-				C8C6838F2914F6C1003A11EC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,14 +187,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C8C6838D2914F6C1003A11EC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C8C6838E2914F6C1003A11EC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C8C683922914F6C2003A11EC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +324,6 @@
 				INFOPLIST_FILE = AppStore/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +351,6 @@
 				INFOPLIST_FILE = AppStore/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +388,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C8C6839B2914F6FE003A11EC /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		C8C6839E2914F712003A11EC /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C8C6839C2914F6FE003A11EC /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C8C6839B2914F6FE003A11EC /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		C8C6839F2914F712003A11EC /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C8C6839E2914F712003A11EC /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C8C6837C2914F6C1003A11EC /* Project object */;
 }
