@@ -9,9 +9,7 @@ import SnapKit
 import UIKit
 
 final class RankingFeatureSectionView: UIView {
-    
-    private let cellHeight: CGFloat = 30.0
-    
+
     
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
@@ -51,7 +49,7 @@ final class RankingFeatureSectionView: UIView {
             RankingFeatureCollectionViewCell.self,
             forCellWithReuseIdentifier: "RankingFeatureCollectionViewCell"
         )
-
+        
         return collectionView
     }()
     
@@ -73,7 +71,7 @@ extension RankingFeatureSectionView: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         CGSize(
             width: collectionView.frame.width - 32.0,
-            height: cellHeight
+            height: RankingFeatureCollectionViewCell.height
         )
     }
 }
@@ -88,11 +86,11 @@ extension RankingFeatureSectionView: UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(
             withReuseIdentifier: "RankingFeatureCollectionViewCell",
             for: indexPath
-        )
+        ) as? RankingFeatureCollectionViewCell
         
-        cell.backgroundColor = .red
-        
-        return cell
+        cell?.setup()
+                
+        return cell ?? UICollectionViewCell()
     }
 }
 
@@ -116,8 +114,7 @@ private extension RankingFeatureSectionView {
         
         collectionView.snp.makeConstraints {
             $0.top.equalTo(titleLabel.snp.bottom).offset(16.0)
-            $0.height.equalTo(cellHeight * 3)
-            //            $0.height.equalTo(RankingFeatureCollectionViewCell.height * 3)
+            $0.height.equalTo(RankingFeatureCollectionViewCell.height * 3)
             $0.leading.equalToSuperview()
             $0.trailing.equalToSuperview()
         }
