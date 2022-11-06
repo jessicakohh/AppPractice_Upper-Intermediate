@@ -17,6 +17,7 @@
 		C87D1D272917856800AE5888 /* RankingFeatureSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87D1D262917856800AE5888 /* RankingFeatureSectionView.swift */; };
 		C87D1D292917866200AE5888 /* RankingFeatureCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87D1D282917866200AE5888 /* RankingFeatureCollectionViewCell.swift */; };
 		C87D1D2B29178D8800AE5888 /* ExchangeCodeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87D1D2A29178D8800AE5888 /* ExchangeCodeButtonView.swift */; };
+		C87D1D3029178F1C00AE5888 /* AppDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87D1D2F29178F1C00AE5888 /* AppDetailViewController.swift */; };
 		C8C683882914F6C1003A11EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C683872914F6C1003A11EC /* AppDelegate.swift */; };
 		C8C6838A2914F6C1003A11EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C683892914F6C1003A11EC /* SceneDelegate.swift */; };
 		C8C6838C2914F6C1003A11EC /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C6838B2914F6C1003A11EC /* TabBarController.swift */; };
@@ -37,6 +38,7 @@
 		C87D1D262917856800AE5888 /* RankingFeatureSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingFeatureSectionView.swift; sourceTree = "<group>"; };
 		C87D1D282917866200AE5888 /* RankingFeatureCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingFeatureCollectionViewCell.swift; sourceTree = "<group>"; };
 		C87D1D2A29178D8800AE5888 /* ExchangeCodeButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeCodeButtonView.swift; sourceTree = "<group>"; };
+		C87D1D2F29178F1C00AE5888 /* AppDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailViewController.swift; sourceTree = "<group>"; };
 		C8C683842914F6C1003A11EC /* AppStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8C683872914F6C1003A11EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8C683892914F6C1003A11EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				C813920629168A09002C9C43 /* TodayViewController.swift */,
 				C8C6838B2914F6C1003A11EC /* TabBarController.swift */,
 				C87D1D1E291769AB00AE5888 /* AppViewController.swift */,
+				C87D1D2F29178F1C00AE5888 /* AppDetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				C87D1D1F291769AB00AE5888 /* AppViewController.swift in Sources */,
 				C813920729168A09002C9C43 /* TodayViewController.swift in Sources */,
 				C813920929175953002C9C43 /* TodayCollectionViewCell.swift in Sources */,
+				C87D1D3029178F1C00AE5888 /* AppDetailViewController.swift in Sources */,
 				C87D1D292917866200AE5888 /* RankingFeatureCollectionViewCell.swift in Sources */,
 				C87D1D272917856800AE5888 /* RankingFeatureSectionView.swift in Sources */,
 			);
