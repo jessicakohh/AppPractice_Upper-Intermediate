@@ -21,7 +21,7 @@ final class AppViewController: UIViewController {
         stackView.spacing = 0.0
         
         let featureSectionView = FeatureSectionView(frame: .zero)
-        let rankingFeatureSectionView = FeatureSectionView(frame: .zero)
+        let rankingFeatureSectionView = RankingFeatureSectionView(frame: .zero)
         let exchangeCodeButtonView = FeatureSectionView(frame: .zero)
         
         [
