@@ -10,6 +10,8 @@ import UIKit
 
 final class TodayViewController: UIViewController {
     
+    private var todayList: [Today] = []
+    
     private lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
@@ -96,3 +98,16 @@ extension TodayViewController: UICollectionViewDelegateFlowLayout {
 
 }
 
+
+
+private extension TodayViewController {
+    func fetchData() {
+        guard let url = Bundle.main.url(forResource: "Today", withExtension: "plist") else { return }
+        
+        do {
+            let data = try Data(contentsOf: url)
+            let result = try PropertyListDecoder().decode([Today].self, from: data)
+            todayList = result
+        } catch {}
+    }
+}
