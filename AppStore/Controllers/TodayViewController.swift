@@ -17,7 +17,7 @@ final class TodayViewController: UIViewController {
         collectionView.dataSource = self
         
         collectionView.backgroundColor = .systemBackground
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "todayCell")
+        collectionView.register(TodayCollectionViewCell.self, forCellWithReuseIdentifier: "todayCell")
         
         return collectionView
     }()
@@ -37,13 +37,15 @@ final class TodayViewController: UIViewController {
 
 extension TodayViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        5
+       return 5
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "todayCell", for: indexPath)
-        cell.backgroundColor = .black
-        return cell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "todayCell", for: indexPath) as? TodayCollectionViewCell
+        
+        cell?.setup()
+        
+        return cell ?? UICollectionViewCell()
     }
 }
 
@@ -56,3 +58,4 @@ extension TodayViewController: UICollectionViewDelegateFlowLayout {
         return CGSize(width: width, height: width)
     }
 }
+

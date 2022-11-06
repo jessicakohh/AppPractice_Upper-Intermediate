@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C813920729168A09002C9C43 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C813920629168A09002C9C43 /* TodayViewController.swift */; };
+		C813920929175953002C9C43 /* TodayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C813920829175953002C9C43 /* TodayCollectionViewCell.swift */; };
 		C8C683882914F6C1003A11EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C683872914F6C1003A11EC /* AppDelegate.swift */; };
 		C8C6838A2914F6C1003A11EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C683892914F6C1003A11EC /* SceneDelegate.swift */; };
 		C8C6838C2914F6C1003A11EC /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C6838B2914F6C1003A11EC /* TabBarController.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		C813920629168A09002C9C43 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		C813920829175953002C9C43 /* TodayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayCollectionViewCell.swift; sourceTree = "<group>"; };
 		C8C683842914F6C1003A11EC /* AppStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8C683872914F6C1003A11EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8C683892914F6C1003A11EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 		C8C683A32914F77F003A11EC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C813920829175953002C9C43 /* TodayCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				C8C683882914F6C1003A11EC /* AppDelegate.swift in Sources */,
 				C8C6838A2914F6C1003A11EC /* SceneDelegate.swift in Sources */,
 				C813920729168A09002C9C43 /* TodayViewController.swift in Sources */,
+				C813920929175953002C9C43 /* TodayCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
