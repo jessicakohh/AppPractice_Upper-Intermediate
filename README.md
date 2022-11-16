@@ -8,3 +8,4 @@
  - UIScrollView + UIStackView로 Section이 있는 UICollectionView처럼 구현  
  - UIActivityViewController (Share Sheet)  
     - 앱 상세 화면에서 공유 기능 구현   
+  
