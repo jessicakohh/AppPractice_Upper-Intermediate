@@ -10,12 +10,13 @@
 		C879ACB1295EC91500A0BBC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C879ACB0295EC91500A0BBC8 /* AppDelegate.swift */; };
 		C879ACB3295EC91500A0BBC8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C879ACB2295EC91500A0BBC8 /* SceneDelegate.swift */; };
 		C879ACB5295EC91500A0BBC8 /* StationSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C879ACB4295EC91500A0BBC8 /* StationSearchViewController.swift */; };
-		C879ACB8295EC91500A0BBC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C879ACB6295EC91500A0BBC8 /* Main.storyboard */; };
 		C879ACBB295EC91500A0BBC8 /* SubwayStation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C879ACB9295EC91500A0BBC8 /* SubwayStation.xcdatamodeld */; };
 		C879ACBD295EC91700A0BBC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C879ACBC295EC91700A0BBC8 /* Assets.xcassets */; };
 		C879ACC0295EC91700A0BBC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C879ACBE295EC91700A0BBC8 /* LaunchScreen.storyboard */; };
 		C879ACC9295EC98C00A0BBC8 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C879ACC8295EC98C00A0BBC8 /* SnapKit */; };
 		C879ACCC295ECA0C00A0BBC8 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C879ACCB295ECA0C00A0BBC8 /* Alamofire */; };
+		C879ACCF295ED6E900A0BBC8 /* StationDeltailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C879ACCE295ED6E900A0BBC8 /* StationDeltailViewController.swift */; };
+		C8E48BA2295EDA4100141F0C /* StationDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E48BA1295EDA4100141F0C /* StationDetailCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,11 +24,12 @@
 		C879ACB0295EC91500A0BBC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C879ACB2295EC91500A0BBC8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C879ACB4295EC91500A0BBC8 /* StationSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationSearchViewController.swift; sourceTree = "<group>"; };
-		C879ACB7295EC91500A0BBC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C879ACBA295EC91500A0BBC8 /* SubwayStation.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SubwayStation.xcdatamodel; sourceTree = "<group>"; };
 		C879ACBC295EC91700A0BBC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C879ACBF295EC91700A0BBC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C879ACC1295EC91700A0BBC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C879ACCE295ED6E900A0BBC8 /* StationDeltailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationDeltailViewController.swift; sourceTree = "<group>"; };
+		C8E48BA1295EDA4100141F0C /* StationDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationDetailCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,14 +66,23 @@
 			children = (
 				C879ACB0295EC91500A0BBC8 /* AppDelegate.swift */,
 				C879ACB2295EC91500A0BBC8 /* SceneDelegate.swift */,
-				C879ACB4295EC91500A0BBC8 /* StationSearchViewController.swift */,
-				C879ACB6295EC91500A0BBC8 /* Main.storyboard */,
+				C879ACCD295ED6C900A0BBC8 /* Scenes */,
 				C879ACBC295EC91700A0BBC8 /* Assets.xcassets */,
 				C879ACBE295EC91700A0BBC8 /* LaunchScreen.storyboard */,
 				C879ACC1295EC91700A0BBC8 /* Info.plist */,
 				C879ACB9295EC91500A0BBC8 /* SubwayStation.xcdatamodeld */,
 			);
 			path = SubwayStation;
+			sourceTree = "<group>";
+		};
+		C879ACCD295ED6C900A0BBC8 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				C879ACB4295EC91500A0BBC8 /* StationSearchViewController.swift */,
+				C879ACCE295ED6E900A0BBC8 /* StationDeltailViewController.swift */,
+				C8E48BA1295EDA4100141F0C /* StationDetailCollectionViewCell.swift */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +153,6 @@
 			files = (
 				C879ACC0295EC91700A0BBC8 /* LaunchScreen.storyboard in Resources */,
 				C879ACBD295EC91700A0BBC8 /* Assets.xcassets in Resources */,
-				C879ACB8295EC91500A0BBC8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +164,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C879ACB5295EC91500A0BBC8 /* StationSearchViewController.swift in Sources */,
+				C879ACCF295ED6E900A0BBC8 /* StationDeltailViewController.swift in Sources */,
+				C8E48BA2295EDA4100141F0C /* StationDetailCollectionViewCell.swift in Sources */,
 				C879ACB1295EC91500A0BBC8 /* AppDelegate.swift in Sources */,
 				C879ACB3295EC91500A0BBC8 /* SceneDelegate.swift in Sources */,
 				C879ACBB295EC91500A0BBC8 /* SubwayStation.xcdatamodeld in Sources */,
@@ -163,14 +175,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C879ACB6295EC91500A0BBC8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C879ACB7295EC91500A0BBC8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C879ACBE295EC91700A0BBC8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
