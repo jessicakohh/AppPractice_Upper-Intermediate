@@ -17,6 +17,8 @@
 		C879ACCC295ECA0C00A0BBC8 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C879ACCB295ECA0C00A0BBC8 /* Alamofire */; };
 		C879ACCF295ED6E900A0BBC8 /* StationDeltailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C879ACCE295ED6E900A0BBC8 /* StationDeltailViewController.swift */; };
 		C8E48BA2295EDA4100141F0C /* StationDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E48BA1295EDA4100141F0C /* StationDetailCollectionViewCell.swift */; };
+		C8F9C16B2962BD45008AB285 /* StationResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F9C16A2962BD45008AB285 /* StationResponseModel.swift */; };
+		C8F9C16D2962C85A008AB285 /* StationArrivalDataResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F9C16C2962C85A008AB285 /* StationArrivalDataResponseModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		C879ACC1295EC91700A0BBC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C879ACCE295ED6E900A0BBC8 /* StationDeltailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationDeltailViewController.swift; sourceTree = "<group>"; };
 		C8E48BA1295EDA4100141F0C /* StationDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationDetailCollectionViewCell.swift; sourceTree = "<group>"; };
+		C8F9C16A2962BD45008AB285 /* StationResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationResponseModel.swift; sourceTree = "<group>"; };
+		C8F9C16C2962C85A008AB285 /* StationArrivalDataResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationArrivalDataResponseModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,7 @@
 			children = (
 				C879ACB0295EC91500A0BBC8 /* AppDelegate.swift */,
 				C879ACB2295EC91500A0BBC8 /* SceneDelegate.swift */,
+				C8F9C1692962BD2D008AB285 /* Models */,
 				C879ACCD295ED6C900A0BBC8 /* Scenes */,
 				C879ACBC295EC91700A0BBC8 /* Assets.xcassets */,
 				C879ACBE295EC91700A0BBC8 /* LaunchScreen.storyboard */,
@@ -83,6 +88,15 @@
 				C8E48BA1295EDA4100141F0C /* StationDetailCollectionViewCell.swift */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		C8F9C1692962BD2D008AB285 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C8F9C16A2962BD45008AB285 /* StationResponseModel.swift */,
+				C8F9C16C2962C85A008AB285 /* StationArrivalDataResponseModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +182,8 @@
 				C8E48BA2295EDA4100141F0C /* StationDetailCollectionViewCell.swift in Sources */,
 				C879ACB1295EC91500A0BBC8 /* AppDelegate.swift in Sources */,
 				C879ACB3295EC91500A0BBC8 /* SceneDelegate.swift in Sources */,
+				C8F9C16D2962C85A008AB285 /* StationArrivalDataResponseModel.swift in Sources */,
+				C8F9C16B2962BD45008AB285 /* StationResponseModel.swift in Sources */,
 				C879ACBB295EC91500A0BBC8 /* SubwayStation.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
