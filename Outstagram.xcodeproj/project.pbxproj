@@ -9,23 +9,28 @@
 /* Begin PBXBuildFile section */
 		C8F9C17B2963E92E008AB285 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F9C17A2963E92E008AB285 /* AppDelegate.swift */; };
 		C8F9C17D2963E92E008AB285 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F9C17C2963E92E008AB285 /* SceneDelegate.swift */; };
-		C8F9C17F2963E92E008AB285 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F9C17E2963E92E008AB285 /* ViewController.swift */; };
-		C8F9C1822963E92E008AB285 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8F9C1802963E92E008AB285 /* Main.storyboard */; };
+		C8F9C17F2963E92E008AB285 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F9C17E2963E92E008AB285 /* FeedViewController.swift */; };
 		C8F9C1852963E92E008AB285 /* Outstagram.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C8F9C1832963E92E008AB285 /* Outstagram.xcdatamodeld */; };
 		C8F9C1872963E930008AB285 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8F9C1862963E930008AB285 /* Assets.xcassets */; };
 		C8F9C18A2963E930008AB285 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8F9C1882963E930008AB285 /* LaunchScreen.storyboard */; };
+		C8F9C1932963EC18008AB285 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C8F9C1922963EC18008AB285 /* SnapKit */; };
+		C8F9C1952963F0DF008AB285 /* TapBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F9C1942963F0DF008AB285 /* TapBarController.swift */; };
+		C8F9C1982963F589008AB285 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F9C1972963F589008AB285 /* FeedTableViewCell.swift */; };
+		C8F9C19B2963FF32008AB285 /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F9C19A2963FF32008AB285 /* UIButton+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C8F9C1772963E92E008AB285 /* Outstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Outstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8F9C17A2963E92E008AB285 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8F9C17C2963E92E008AB285 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C8F9C17E2963E92E008AB285 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C8F9C1812963E92E008AB285 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C8F9C17E2963E92E008AB285 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		C8F9C1842963E92E008AB285 /* Outstagram.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Outstagram.xcdatamodel; sourceTree = "<group>"; };
 		C8F9C1862963E930008AB285 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8F9C1892963E930008AB285 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C8F9C18B2963E930008AB285 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8F9C1942963F0DF008AB285 /* TapBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapBarController.swift; sourceTree = "<group>"; };
+		C8F9C1972963F589008AB285 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		C8F9C19A2963FF32008AB285 /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8F9C1932963EC18008AB285 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,14 +66,32 @@
 			children = (
 				C8F9C17A2963E92E008AB285 /* AppDelegate.swift */,
 				C8F9C17C2963E92E008AB285 /* SceneDelegate.swift */,
-				C8F9C17E2963E92E008AB285 /* ViewController.swift */,
-				C8F9C1802963E92E008AB285 /* Main.storyboard */,
+				C8F9C1992963F58E008AB285 /* Views */,
+				C8F9C1962963F0E9008AB285 /* Controllers */,
 				C8F9C1862963E930008AB285 /* Assets.xcassets */,
 				C8F9C1882963E930008AB285 /* LaunchScreen.storyboard */,
 				C8F9C18B2963E930008AB285 /* Info.plist */,
 				C8F9C1832963E92E008AB285 /* Outstagram.xcdatamodeld */,
 			);
 			path = Outstagram;
+			sourceTree = "<group>";
+		};
+		C8F9C1962963F0E9008AB285 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C8F9C17E2963E92E008AB285 /* FeedViewController.swift */,
+				C8F9C1942963F0DF008AB285 /* TapBarController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C8F9C1992963F58E008AB285 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C8F9C1972963F589008AB285 /* FeedTableViewCell.swift */,
+				C8F9C19A2963FF32008AB285 /* UIButton+.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +110,9 @@
 			dependencies = (
 			);
 			name = Outstagram;
+			packageProductDependencies = (
+				C8F9C1922963EC18008AB285 /* SnapKit */,
+			);
 			productName = Outstagram;
 			productReference = C8F9C1772963E92E008AB285 /* Outstagram.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +141,9 @@
 				Base,
 			);
 			mainGroup = C8F9C16E2963E92E008AB285;
+			packageReferences = (
+				C8F9C1912963EC18008AB285 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = C8F9C1782963E92E008AB285 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -130,7 +160,6 @@
 			files = (
 				C8F9C18A2963E930008AB285 /* LaunchScreen.storyboard in Resources */,
 				C8F9C1872963E930008AB285 /* Assets.xcassets in Resources */,
-				C8F9C1822963E92E008AB285 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,7 +170,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8F9C17F2963E92E008AB285 /* ViewController.swift in Sources */,
+				C8F9C17F2963E92E008AB285 /* FeedViewController.swift in Sources */,
+				C8F9C19B2963FF32008AB285 /* UIButton+.swift in Sources */,
+				C8F9C1982963F589008AB285 /* FeedTableViewCell.swift in Sources */,
+				C8F9C1952963F0DF008AB285 /* TapBarController.swift in Sources */,
 				C8F9C17B2963E92E008AB285 /* AppDelegate.swift in Sources */,
 				C8F9C1852963E92E008AB285 /* Outstagram.xcdatamodeld in Sources */,
 				C8F9C17D2963E92E008AB285 /* SceneDelegate.swift in Sources */,
@@ -151,14 +183,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C8F9C1802963E92E008AB285 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C8F9C1812963E92E008AB285 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C8F9C1882963E930008AB285 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -296,7 +320,6 @@
 				INFOPLIST_FILE = Outstagram/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -324,7 +347,6 @@
 				INFOPLIST_FILE = Outstagram/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -362,6 +384,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C8F9C1912963EC18008AB285 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C8F9C1922963EC18008AB285 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C8F9C1912963EC18008AB285 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		C8F9C1832963E92E008AB285 /* Outstagram.xcdatamodeld */ = {
