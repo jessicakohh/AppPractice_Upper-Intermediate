@@ -10,15 +10,15 @@
 import Foundation
 
 struct StationResponseModel: Decodable {
-    
     var stations: [Station] { searchInfo.row }
-    
-    private let searchInfo: SearchInfoBuSubwayNameServiceModel
-    
+
+    private let searchInfo: SearchInfoBySubwayNameServiceModel
+
     enum CodingKeys: String, CodingKey {
-        case searchInfo = "SearchInfoBuSubwayNameService"
+        case searchInfo = "SearchInfoBySubwayNameService"
     }
-    struct SearchInfoBuSubwayNameServiceModel: Decodable {
+
+    struct SearchInfoBySubwayNameServiceModel: Decodable {
         var row: [Station] = []
     }
 }
@@ -26,9 +26,9 @@ struct StationResponseModel: Decodable {
 struct Station: Decodable {
     let stationName: String
     let lineNumber: String
-    
+
     enum CodingKeys: String, CodingKey {
-        case stationName = "SATATION_NM"
+        case stationName = "STATION_NM"
         case lineNumber = "LINE_NUM"
     }
 }
