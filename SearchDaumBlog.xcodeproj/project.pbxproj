@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		C81C6E3B296CDC9000F2EC1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81C6E3A296CDC9000F2EC1A /* AppDelegate.swift */; };
 		C81C6E3D296CDC9000F2EC1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81C6E3C296CDC9000F2EC1A /* SceneDelegate.swift */; };
-		C81C6E3F296CDC9000F2EC1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81C6E3E296CDC9000F2EC1A /* ViewController.swift */; };
-		C81C6E42296CDC9000F2EC1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C81C6E40296CDC9000F2EC1A /* Main.storyboard */; };
 		C81C6E44296CDC9100F2EC1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C81C6E43296CDC9100F2EC1A /* Assets.xcassets */; };
 		C81C6E47296CDC9100F2EC1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C81C6E45296CDC9100F2EC1A /* LaunchScreen.storyboard */; };
+		C81C6E51296CDDE100F2EC1A /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C81C6E50296CDDE100F2EC1A /* Kingfisher */; };
+		C81C6E54296CDDF200F2EC1A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C81C6E53296CDDF200F2EC1A /* SnapKit */; };
+		C81C6E56296CDE4400F2EC1A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81C6E55296CDE4400F2EC1A /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C81C6E37296CDC9000F2EC1A /* SearchDaumBlog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchDaumBlog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C81C6E3A296CDC9000F2EC1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C81C6E3C296CDC9000F2EC1A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C81C6E3E296CDC9000F2EC1A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C81C6E41296CDC9000F2EC1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C81C6E43296CDC9100F2EC1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C81C6E46296CDC9100F2EC1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C81C6E48296CDC9100F2EC1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C81C6E55296CDE4400F2EC1A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +31,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C81C6E51296CDDE100F2EC1A /* Kingfisher in Frameworks */,
+				C81C6E54296CDDF200F2EC1A /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,11 +60,10 @@
 			children = (
 				C81C6E3A296CDC9000F2EC1A /* AppDelegate.swift */,
 				C81C6E3C296CDC9000F2EC1A /* SceneDelegate.swift */,
-				C81C6E3E296CDC9000F2EC1A /* ViewController.swift */,
-				C81C6E40296CDC9000F2EC1A /* Main.storyboard */,
 				C81C6E43296CDC9100F2EC1A /* Assets.xcassets */,
 				C81C6E45296CDC9100F2EC1A /* LaunchScreen.storyboard */,
 				C81C6E48296CDC9100F2EC1A /* Info.plist */,
+				C81C6E55296CDE4400F2EC1A /* MainViewController.swift */,
 			);
 			path = SearchDaumBlog;
 			sourceTree = "<group>";
@@ -83,6 +84,10 @@
 			dependencies = (
 			);
 			name = SearchDaumBlog;
+			packageProductDependencies = (
+				C81C6E50296CDDE100F2EC1A /* Kingfisher */,
+				C81C6E53296CDDF200F2EC1A /* SnapKit */,
+			);
 			productName = SearchDaumBlog;
 			productReference = C81C6E37296CDC9000F2EC1A /* SearchDaumBlog.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,11 @@
 				Base,
 			);
 			mainGroup = C81C6E2E296CDC9000F2EC1A;
+			packageReferences = (
+				C81C6E4E296CDD2200F2EC1A /* XCRemoteSwiftPackageReference "RxSwift" */,
+				C81C6E4F296CDDE100F2EC1A /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				C81C6E52296CDDF200F2EC1A /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = C81C6E38296CDC9000F2EC1A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +137,6 @@
 			files = (
 				C81C6E47296CDC9100F2EC1A /* LaunchScreen.storyboard in Resources */,
 				C81C6E44296CDC9100F2EC1A /* Assets.xcassets in Resources */,
-				C81C6E42296CDC9000F2EC1A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C81C6E3F296CDC9000F2EC1A /* ViewController.swift in Sources */,
+				C81C6E56296CDE4400F2EC1A /* MainViewController.swift in Sources */,
 				C81C6E3B296CDC9000F2EC1A /* AppDelegate.swift in Sources */,
 				C81C6E3D296CDC9000F2EC1A /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +156,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C81C6E40296CDC9000F2EC1A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C81C6E41296CDC9000F2EC1A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C81C6E45296CDC9100F2EC1A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +293,6 @@
 				INFOPLIST_FILE = SearchDaumBlog/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +320,6 @@
 				INFOPLIST_FILE = SearchDaumBlog/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +357,46 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C81C6E4E296CDD2200F2EC1A /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		C81C6E4F296CDDE100F2EC1A /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		C81C6E52296CDDF200F2EC1A /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C81C6E50296CDDE100F2EC1A /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C81C6E4F296CDDE100F2EC1A /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		C81C6E53296CDDF200F2EC1A /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C81C6E52296CDDF200F2EC1A /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C81C6E2F296CDC9000F2EC1A /* Project object */;
 }
